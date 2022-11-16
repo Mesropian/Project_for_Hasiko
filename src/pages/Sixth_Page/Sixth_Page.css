@@ -1,0 +1,612 @@
+.sixth_page_container {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: rgb(45, 4, 4);
+  @import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@700&display=swap");
+}
+.sixth_page_container body {
+  font-family: "Open Sans", sans-serif;
+}
+.sixth_page_container .cinema-container {
+  background-color: rgb(126, 17, 17);
+  width: 1200px;
+  height: 950px;
+  position: absolute;
+  top: 100px;
+  left: 20%;
+  overflow: hidden;
+  background-image: url(https://clipartstation.com/wp-content/uploads/2017/11/kinosaal-clipart-8.jpg);
+  background-size: cover;
+}
+.sixth_page_container .ceiling {
+  width: 1200px;
+  height: 200px;
+  border-radius: 15%;
+  position: absolute;
+  top: -50px;
+  z-index: 7;
+  background: rgb(115, 67, 67);
+  background: radial-gradient(circle, rgb(115, 67, 67) 0%, rgb(62, 38, 38) 52%, rgb(29, 15, 15) 100%);
+}
+.sixth_page_container .wall {
+  background-color: #2B1603;
+  width: 1200px;
+  height: 575px;
+  z-index: 2;
+  position: absolute;
+  top: 145px;
+  background: rgb(220, 255, 255);
+  background: linear-gradient(0deg, rgb(220, 255, 255) 0%, rgb(43, 22, 3) 0%, rgb(17, 8, 1) 100%);
+}
+.sixth_page_container .ground {
+  background-color: #613D23;
+  width: 1200px;
+  height: 80px;
+  z-index: 2;
+  position: absolute;
+  bottom: 150px;
+  background: rgb(220, 255, 255);
+  background: linear-gradient(0deg, rgb(220, 255, 255) 0%, rgb(97, 61, 35) 0%, rgb(69, 44, 25) 53%, rgb(51, 32, 18) 100%);
+}
+.sixth_page_container .seat-container {
+  background-color: #331B03;
+  width: 1200px;
+  height: 150px;
+  position: absolute;
+  bottom: 0px;
+}
+.sixth_page_container .curtain1 {
+  background-color: #B20614;
+  width: 600px;
+  height: 630px;
+  position: absolute;
+  bottom: 190px;
+  left: 0px;
+  z-index: 5;
+  background-image: linear-gradient(90deg, transparent 50%, rgba(5, 5, 5, 0.5) 0%);
+  background-size: 50px 50px;
+  box-shadow: 14px 23px 25px 15px rgba(0, 0, 0, 0.54);
+  -webkit-animation: curtainleftmove 10s;
+          animation: curtainleftmove 10s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+  -webkit-animation-delay: 5s;
+          animation-delay: 5s;
+}
+@-webkit-keyframes curtainleftmove {
+  from {
+    left: 0px;
+  }
+  to {
+    left: -480px;
+  }
+}
+@keyframes curtainleftmove {
+  from {
+    left: 0px;
+  }
+  to {
+    left: -480px;
+  }
+}
+.sixth_page_container .curtain2 {
+  background-color: #B20614;
+  width: 600px;
+  height: 630px;
+  position: absolute;
+  bottom: 190px;
+  right: 0px;
+  z-index: 5;
+  background-image: linear-gradient(90deg, transparent 50%, rgba(5, 5, 5, 0.5) 0%);
+  background-size: 50px 50px;
+  box-shadow: -16px 23px 25px 15px rgba(0, 0, 0, 0.54);
+  -webkit-animation: curtainrightmove 10s;
+          animation: curtainrightmove 10s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+  -webkit-animation-delay: 5s;
+          animation-delay: 5s;
+}
+@-webkit-keyframes curtainrightmove {
+  from {
+    right: 0px;
+  }
+  to {
+    right: -480px;
+  }
+}
+@keyframes curtainrightmove {
+  from {
+    right: 0px;
+  }
+  to {
+    right: -480px;
+  }
+}
+.sixth_page_container .screen {
+  background: black;
+  width: 830px;
+  height: 420px;
+  z-index: 4;
+  position: absolute;
+  top: 200px;
+  left: 180px;
+  box-shadow: 14px 23px 25px 15px rgba(0, 0, 0, 0.54);
+  -webkit-animation-name: screenon;
+          animation-name: screenon;
+  -webkit-animation-duration: 7s;
+          animation-duration: 7s;
+  -webkit-animation-delay: 19s;
+          animation-delay: 19s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+  -webkit-animation-timing-function: ease-in;
+          animation-timing-function: ease-in;
+  overflow: hidden;
+}
+@-webkit-keyframes screenon {
+  from {
+    background: black;
+  }
+  to {
+    background: rgb(207, 207, 207);
+    box-shadow: 21px 35px 60px 64px rgba(255, 255, 255, 0.2);
+  }
+}
+@keyframes screenon {
+  from {
+    background: black;
+  }
+  to {
+    background: rgb(207, 207, 207);
+    box-shadow: 21px 35px 60px 64px rgba(255, 255, 255, 0.2);
+  }
+}
+.sixth_page_container .chair {
+  background: rgb(220, 255, 255);
+  background: linear-gradient(0deg, rgb(220, 255, 255) 0%, rgb(43, 22, 3) 0%, rgb(83, 10, 10) 24%, rgb(117, 13, 13) 100%);
+  width: 220px;
+  height: 100px;
+  position: absolute;
+  bottom: -40px;
+  left: 0px;
+  border-radius: 20%;
+  border-top: 20px solid rgb(161, 39, 39);
+  border-left: 20px solid rgb(141, 24, 24);
+  border-right: 20px solid rgb(141, 24, 24);
+  border-bottom: 20px solid #331B03;
+}
+.sixth_page_container .chair1 {
+  z-index: 5;
+}
+.sixth_page_container .chair2 {
+  position: absolute;
+  bottom: -40px;
+  left: 300px;
+  z-index: 5;
+}
+.sixth_page_container .chair3 {
+  position: absolute;
+  bottom: -40px;
+  left: 600px;
+  z-index: 5;
+}
+.sixth_page_container .chair4 {
+  position: absolute;
+  bottom: -40px;
+  left: 900px;
+  z-index: 5;
+}
+.sixth_page_container .chair5 {
+  position: absolute;
+  bottom: 20px;
+  left: 120px;
+  height: 80px;
+}
+.sixth_page_container .chair6 {
+  position: absolute;
+  bottom: 20px;
+  left: 450px;
+  height: 80px;
+}
+.sixth_page_container .chair7 {
+  position: absolute;
+  bottom: 20px;
+  left: 750px;
+  height: 80px;
+}
+.sixth_page_container .chair8 {
+  position: absolute;
+  bottom: 20px;
+  left: 1050px;
+  height: 80px;
+}
+.sixth_page_container .chair9 {
+  position: absolute;
+  bottom: 20px;
+  left: -200px;
+  height: 80px;
+}
+.sixth_page_container .light {
+  width: 30px;
+  height: 20px;
+  border-radius: 50%;
+  background-color: rgb(245, 244, 201);
+  z-index: 12;
+  position: absolute;
+  top: 50px;
+  left: 460px;
+  -webkit-animation-name: dimlight;
+          animation-name: dimlight;
+  -webkit-animation-duration: 4s;
+          animation-duration: 4s;
+  -webkit-animation-delay: 15s;
+          animation-delay: 15s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+}
+@-webkit-keyframes dimlight {
+  from {
+    background-color: rgb(245, 244, 201);
+  }
+  to {
+    background-color: rgb(83, 83, 78);
+  }
+}
+@keyframes dimlight {
+  from {
+    background-color: rgb(245, 244, 201);
+  }
+  to {
+    background-color: rgb(83, 83, 78);
+  }
+}
+.sixth_page_container .light2 {
+  position: absolute;
+  top: 80px;
+  left: 590px;
+}
+.sixth_page_container .light3 {
+  position: absolute;
+  top: 50px;
+  left: 720px;
+}
+.sixth_page_container .layer {
+  background-color: rgba(235, 241, 179, 0.1);
+  width: 1200px;
+  height: 950px;
+  position: absolute;
+  z-index: 20;
+  -webkit-animation-name: dim;
+          animation-name: dim;
+  -webkit-animation-duration: 4s;
+          animation-duration: 4s;
+  -webkit-animation-delay: 15s;
+          animation-delay: 15s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+}
+@-webkit-keyframes dim {
+  from {
+    background-color: rgba(235, 241, 179, 0.1);
+  }
+  to {
+    background-color: rgba(0, 0, 0, 0.2);
+  }
+}
+@keyframes dim {
+  from {
+    background-color: rgba(235, 241, 179, 0.1);
+  }
+  to {
+    background-color: rgba(0, 0, 0, 0.2);
+  }
+}
+.sixth_page_container .three {
+  font-size: 10rem;
+  color: rgba(0, 0, 0, 0);
+  position: absolute;
+  top: 110px;
+  left: 370px;
+  -webkit-animation-name: countstart;
+          animation-name: countstart;
+  -webkit-animation-duration: 1.5s;
+          animation-duration: 1.5s;
+  -webkit-animation-delay: 22s;
+          animation-delay: 22s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+  z-index: 7;
+}
+.sixth_page_container .two {
+  font-size: 10rem;
+  color: rgba(0, 0, 0, 0);
+  position: absolute;
+  top: 110px;
+  left: 365px;
+  -webkit-animation-name: countstart;
+          animation-name: countstart;
+  -webkit-animation-duration: 1.5s;
+          animation-duration: 1.5s;
+  -webkit-animation-delay: 23.5s;
+          animation-delay: 23.5s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+  z-index: 7;
+}
+.sixth_page_container .one {
+  font-size: 10rem;
+  color: rgba(0, 0, 0, 0);
+  position: absolute;
+  top: 110px;
+  left: 365px;
+  -webkit-animation-name: countstart;
+          animation-name: countstart;
+  -webkit-animation-duration: 1.5s;
+          animation-duration: 1.5s;
+  -webkit-animation-delay: 25s;
+          animation-delay: 25s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+  z-index: 7;
+}
+@-webkit-keyframes countstart {
+  0% {
+    color: rgba(0, 0, 0, 0);
+  }
+  50% {
+    color: rgb(0, 0, 0);
+  }
+  100% {
+    color: rgba(0, 0, 0, 0);
+  }
+}
+@keyframes countstart {
+  0% {
+    color: rgba(0, 0, 0, 0);
+  }
+  50% {
+    color: rgb(0, 0, 0);
+  }
+  100% {
+    color: rgba(0, 0, 0, 0);
+  }
+}
+.sixth_page_container .circle-inner {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  border: 3px solid rgba(0, 0, 0, 0);
+  position: absolute;
+  top: 110px;
+  left: 310px;
+  -webkit-animation-name: circlestart;
+          animation-name: circlestart;
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
+  -webkit-animation-delay: 22s;
+          animation-delay: 22s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+  z-index: 6;
+}
+.sixth_page_container .circle-outer {
+  width: 240px;
+  height: 240px;
+  border-radius: 50%;
+  border: 3px solid rgba(0, 0, 0, 0);
+  position: absolute;
+  top: 90px;
+  left: 290px;
+  -webkit-animation-name: circlestart;
+          animation-name: circlestart;
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
+  -webkit-animation-delay: 22s;
+          animation-delay: 22s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+  z-index: 6;
+}
+@-webkit-keyframes circlestart {
+  0% {
+    border: 3px solid rgba(255, 255, 255, 0);
+    background-color: rgba(255, 255, 255, 0);
+  }
+  100% {
+    border: 3px solid rgb(255, 255, 255);
+    background-color: rgba(255, 255, 255, 0.2);
+  }
+}
+@keyframes circlestart {
+  0% {
+    border: 3px solid rgba(255, 255, 255, 0);
+    background-color: rgba(255, 255, 255, 0);
+  }
+  100% {
+    border: 3px solid rgb(255, 255, 255);
+    background-color: rgba(255, 255, 255, 0.2);
+  }
+}
+.sixth_page_container .line1 {
+  width: 830px;
+  height: 1px;
+  background-color: black;
+  position: absolute;
+  top: 220px;
+  left: 0px;
+  z-index: 5;
+}
+.sixth_page_container .line2 {
+  width: 1px;
+  height: 420px;
+  background-color: black;
+  position: absolute;
+  top: 0px;
+  left: 415px;
+  z-index: 5;
+}
+.sixth_page_container .screen2 {
+  background: rgba(255, 255, 255, 0);
+  width: 830px;
+  height: 420px;
+  z-index: 10;
+  position: absolute;
+  overflow: hidden;
+  -webkit-animation-name: screen2;
+          animation-name: screen2;
+  -webkit-animation-duration: 3s;
+          animation-duration: 3s;
+  -webkit-animation-delay: 27s;
+          animation-delay: 27s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+  -webkit-animation-timing-function: ease-in;
+          animation-timing-function: ease-in;
+}
+@-webkit-keyframes screen2 {
+  0% {
+    background-color: rgba(255, 255, 255, 0);
+  }
+  100% {
+    background-color: rgb(134, 105, 138);
+  }
+}
+@keyframes screen2 {
+  0% {
+    background-color: rgba(255, 255, 255, 0);
+  }
+  100% {
+    background-color: rgb(134, 105, 138);
+  }
+}
+.sixth_page_container .wool {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  background-color: white;
+  position: absolute;
+}
+.sixth_page_container .wool1 {
+  position: absolute;
+  bottom: 150px;
+  left: 290px;
+}
+.sixth_page_container .wool2 {
+  position: absolute;
+  bottom: 110px;
+  left: 320px;
+}
+.sixth_page_container .wool3 {
+  position: absolute;
+  bottom: 180px;
+  left: 320px;
+}
+.sixth_page_container .wool4 {
+  position: absolute;
+  bottom: 180px;
+  left: 370px;
+}
+.sixth_page_container .wool5 {
+  position: absolute;
+  bottom: 110px;
+  left: 370px;
+}
+.sixth_page_container .wool6 {
+  position: absolute;
+  bottom: 150px;
+  left: 400px;
+}
+.sixth_page_container .head {
+  display: block;
+  width: 60px;
+  height: 80px;
+  background-color: black;
+  border-radius: 50% 50% 50% 50%/60% 60% 40% 40%;
+  position: absolute;
+  bottom: 160px;
+  left: 365px;
+}
+.sixth_page_container .ear1 {
+  display: block;
+  width: 20px;
+  height: 50px;
+  background-color: black;
+  border-radius: 50% 50% 50% 50%/60% 60% 40% 40%;
+  position: absolute;
+  bottom: 190px;
+  left: 415px;
+  transform: rotate(-120deg);
+}
+.sixth_page_container .ear2 {
+  display: block;
+  width: 20px;
+  height: 50px;
+  background-color: black;
+  border-radius: 50% 50% 50% 50%/60% 60% 40% 40%;
+  position: absolute;
+  bottom: 190px;
+  left: 355px;
+  transform: rotate(120deg);
+}
+.sixth_page_container .leg1 {
+  width: 20px;
+  height: 40px;
+  background-color: black;
+  z-index: 5;
+  position: absolute;
+  bottom: 70px;
+  left: 355px;
+  transform: rotate(10deg);
+}
+.sixth_page_container .leg2 {
+  width: 20px;
+  height: 40px;
+  background-color: black;
+  z-index: 5;
+  position: absolute;
+  bottom: 70px;
+  left: 425px;
+  transform: rotate(-10deg);
+}
+.sixth_page_container .sign {
+  width: 180px;
+  height: 100px;
+  background-color: rgb(80, 46, 95);
+  z-index: 5;
+  position: absolute;
+  bottom: -10px;
+  left: 310px;
+  color: white;
+  font-size: 2rem;
+  text-align: center;
+}
+.sixth_page_container .sheep {
+  position: absolute;
+  bottom: -400px;
+  left: 25px;
+  -webkit-animation: sheepMove 10s linear;
+  -webkit-animation-delay: 27s;
+          animation-delay: 27s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+}
+@-webkit-keyframes sheepMove {
+  0% {
+    transform: translateY(0px);
+  }
+  100% {
+    transform: translateY(-450px);
+  }
+}
+@keyframes sheepMove {
+  0% {
+    transform: translateY(0px);
+  }
+  100% {
+    transform: translateY(-450px);
+  }
+}/*# sourceMappingURL=Sixth_Page.css.map */
